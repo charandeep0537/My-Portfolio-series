@@ -1,5 +1,5 @@
 /**
- * Central portfolio data — generated from Sushmita's resume (Sushmita_dasari.pdf).
+ * Central portfolio data — generated from Charandeep's resume (Charandeep_Danthika.pdf).
  * Every fact on the site comes from this file. Update it here and the whole site follows.
  * Nothing here should be added unless it appears on the resume.
  */
@@ -7,61 +7,68 @@
 export type Palette = { from: string; via: string; to: string; accent: string };
 
 export const profile = {
-  fullName: 'Dasari Venkata Ratna Sri Sushmita',
-  displayName: 'Sushmita Dasari',
-  firstName: 'SUSHMITA',
+  fullName: 'Danthika Charan Deep',
+  displayName: 'Charan Deep',
+  firstName: 'CHARAN',
   seriesTag: 'THE SERIES',
   /** Fictional studio card shown at the very start of the opening sequence. */
-  originalLabel: 'A DASARI ORIGINAL',
-  role: 'Full-Stack Developer',
-  tagline: ['Full-Stack Developer', 'AI / ML', 'Java'],
+  originalLabel: 'A DANTHIKA\'S ORIGINAL',
+  role: 'Software Engineer',
+  tagline: ['Software Engineer', 'AI / ML', 'Python'],
   intro:
-    'A B.Tech Artificial Intelligence & Machine Learning student (CGPA 9.10) and full-stack developer building AI-powered platforms, payment systems and multi-tenant SaaS with Java, Python, React, Node.js and Docker.',
-  location: 'Surampalem, Andhra Pradesh',
-  email: 'sushmitadasari17@gmail.com',
+    'A B.Tech Computer Science and Engineering student (CGPA 8.01) and AI / ML enthusiastic building AI-powered platforms, payment systems and multi-tenant SaaS with Java, Python, React, Node.js and Docker.',
+  location: 'Guntakal, Andhra Pradesh',
+  email: 'charandeep0537@gmail.com',
   links: {
-    linkedin: 'https://www.linkedin.com/in/sushmita-dasari-227a40284/',
-    github: 'https://github.com/Sushmitadasari',
+    linkedin: 'https://www.linkedin.com/in/danthika-charan-deep',
+    github: 'https://github.com/charandeep0537',
   },
-  resumePdf: '/assets/Sushmita_Dasari_Resume.pdf',
+  resumePdf: '/assets/Charandeep_Danthika_Resume.pdf',
   portrait: {
     src: '/assets/portrait-720.webp',
     srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
-    alt: 'Portrait of Sushmita Dasari',
+    alt: 'Portrait of Danthika Charan Deep',
   },
   interests: ['System Design', 'Cloud Computing (AWS)', 'Machine Learning'],
 };
 
 export const education = [
   {
-    school: 'Aditya Engineering College',
-    place: 'Surampalem',
-    degree: 'Bachelor of Technology — Artificial Intelligence and Machine Learning',
-    period: 'October 2023 – Present',
-    score: 'CGPA 9.10',
+    school: 'RGM College of Engineering and Technology',
+    place: 'Nandyal',
+    degree: 'Bachelor of Technology — Computer Science and Engineering',
+    period: 'September 2023 – April 2027',
+    score: 'CGPA 8.01',
   },
   {
-    school: 'Sri Chaitanya Junior College',
-    place: 'Kakinada',
-    degree: 'BIEAP — MPC',
-    period: 'June 2021 – May 2023',
-    score: 'Score 925/1000',
+    school: 'Resonance Junior College',
+    place: 'Hyderabad',
+    degree: 'Intermediate',
+    period: '2021 - 2023',
+    score: '94.1%',
+  },
+  {
+    school: 'Bhashyam High School',
+    place: 'Guntakal',
+    degree: '10th Grade',
+    period: '2020 - 2021',
+    score: '100%',
   },
 ];
 
 export const experience = [
   {
-    company: 'Technical Hub Pvt Ltd',
-    role: 'Trainee',
-    place: 'Surampalem, AP',
-    period: 'May 2025 – June 2026',
+    company: 'EduSkills Foundation (in association with AWS Academy)',
+    role: 'Cloud Computing Intern – AWS Services',
+    place: 'Remote',
+    period: '2024',
     points: [
-      'Completed one year of intensive Full-Stack Development (FSD) training covering frontend, backend, database integration, and deployment workflows.',
-      'Developed responsive and functional web applications by implementing user interfaces, server-side logic, and database connectivity.',
-      'Deployed and managed web applications while applying version control, debugging, and end-to-end development practices.',
+      'Completed a structured internship on AWS services: provisioned and configured EC2 instances, S3 buckets, RDS databases, IAM roles, and VPC networking.',
+      'Gained hands-on experience with cloud architecture design, cost optimization, and secure, scalable deployment on AWS.',
     ],
   },
 ];
+
 
 export type Metric = { value: string; label: string };
 
@@ -563,7 +570,7 @@ export const introSlides: IntroSlide[] = [
   },
 ];
 
-export type ProfileId = 'sushmita' | 'recruiter' | 'developer' | 'creative';
+export type ProfileId = 'charandeep' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
 export const viewerProfiles: {
@@ -573,35 +580,35 @@ export const viewerProfiles: {
   color: string;
   order: SectionId[];
 }[] = [
-  {
-    id: 'sushmita',
-    name: 'Sushmita',
-    blurb: 'The full series, in order',
-    color: '#e5132b',
-    order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
-  },
-  {
-    id: 'recruiter',
-    name: 'Recruiter',
-    blurb: 'Resume, achievements & skills first',
-    color: '#4cc9ff',
-    order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
-  },
-  {
-    id: 'developer',
-    name: 'Developer',
-    blurb: 'Projects, stack & GitHub first',
-    color: '#46e3a8',
-    order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
-  },
-  {
-    id: 'creative',
-    name: 'Creative',
-    blurb: 'The story arc & highlights first',
-    color: '#ffb547',
-    order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
-  },
-];
+    {
+      id: 'charandeep',
+      name: 'Charan Deep',
+      blurb: 'The full series, in order',
+      color: '#e5132b',
+      order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
+    },
+    {
+      id: 'recruiter',
+      name: 'Recruiter',
+      blurb: 'Resume, achievements & skills first',
+      color: '#4cc9ff',
+      order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
+    },
+    {
+      id: 'developer',
+      name: 'Developer',
+      blurb: 'Projects, stack & GitHub first',
+      color: '#46e3a8',
+      order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
+    },
+    {
+      id: 'creative',
+      name: 'Creative',
+      blurb: 'The story arc & highlights first',
+      color: '#ffb547',
+      order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
+    },
+  ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
   about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Education & training', palette: violet },
